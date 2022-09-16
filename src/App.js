@@ -15,7 +15,7 @@ function App() {
   const [search, setSearching] = useState(false)
   const [cargando, setCargando] = useState(false);
 
-  //////Llamamos la api para que me traiga los primeros 20 pokemones
+  //////Llamamos la api para que me traiga los primeros 21 pokemones
   const fetchPagination = async() => {
     setCargando(true)
    try {
