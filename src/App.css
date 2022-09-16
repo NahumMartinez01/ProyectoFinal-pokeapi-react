@@ -1,38 +1,202 @@
-.App {
+body{
+  background-color: rgba(245, 197, 86, 0.8);
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  background-color: #212121;
+  margin-bottom: 30px;     
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  padding: 0px 10px 20px 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control{
+  padding: 10px;
+  width: 300px;
+  outline: none;
+  margin-right: 20px;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 8px 5px 5px 0px rgba(186,181,181,0.75);
+  -webkit-box-shadow: 8px 5px 5px 0px rgba(186,181,181,0.75);
+  -moz-box-shadow: 8px 5px 5px 0px rgba(186,181,181,0.75);
+}
+
+.btn {
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80px;
+  outline: none;
+  border: none;
+  background-color: #ff0000;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.btn:active{
+    transform: scale(0.78); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.container-select {
+  max-width: 250px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.container-select .select-form{
+	color: #111;
+	width: 100%;
+	cursor: pointer;
+  padding: 6px 10px;
+  height: 32px;
+  outline: 0; 
+  border: 0;
+	border-radius: 0;
+	background: rgb(255,255,255);
+	font-size: 1em;
+	border:1px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;  
+}
+
+.container-select .select-form:hover{
+	background-color: rgba(237, 187, 153,0.7);
+  color: #333;
+}
+ 
+.container-select .select-form option {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.text-h1{
+  margin: 50px 0 70px 0;
+  color: #212121;
+}
+
+
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding: 0px 10px 0 80px;
+}
+
+.card-pokemons {
+  background: #F38D29; 
+  border-radius: 10px; 
+  position: relative;
+  width: 250px;
+  height: 340px;
+  margin-bottom: 20px;
+}
+
+.card-img{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: absolute;
+  left:50px;
+  top:-60px;
+}
+
+.card-img img{
+  margin: auto;
+  width: 150px;
+  height: 150px;  
+}
+
+.card-body{
+  padding-top: 115px;
+}
+
+.card-id{
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 28px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+  width: 80px;   
+  height: 30px;
+  
+}
+
+.text-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: #212121;
+}
+
+.text-altura{
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+} 
+
+.card-footer{
+  
+  display: inline;
+  background-color: #EA3030;
+  box-shadow:  8px 10px 15px 0px rgba(124, 77, 30, 0.55);  
+  -webkit-box-shadow: 8px 10px 15px 0px rgba(124, 77, 30, 0.55);
+  -moz-box-shadow: 8px 10px 15px 0px rgba(124, 77, 30, 0.55);
+  border-radius: 30px;
+  padding: 9px;
+}
+
+.type-text{
+  color: #ddd;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+
+/* 
+.card-pokemons .card-header {
+  background-color: #EF5350;
+} */
+
+/* .card-pokemons img{
+  margin: auto;
+  width: 270px;
+  height: 250px;
+}
+
+.card-pokemons .card-body {
+  background-color: #212121;
+}
+
+
+.card-pokemons .card-footer{
+  background-color: #ccc;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.card-pokemons .card-footer span {
+  line-height: 38px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.card-pokemons .type {
+  display: block;
+} */
