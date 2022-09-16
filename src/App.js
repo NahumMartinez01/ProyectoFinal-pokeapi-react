@@ -1,9 +1,9 @@
 import { useState,useEffect } from 'react';
-import { fetchAllPokemon,fetchNormal, fetchPokemon, fetchType } from './api';
+import { fetchAllPokemon,fetchNormal, fetchPokemon} from './api';
+import Swal from "sweetalert2";
 import Search from './components/Search';
 import './App.css';
 import Pokemones from './components/Pokemones';
-import { type } from '@testing-library/user-event/dist/type';
 import Nav from './components/Nav';
 
 
@@ -42,10 +42,15 @@ function App() {
       try {
         const res = await fetchPokemon(busqueda);
         const data = await res.json();
-       setPokemon([data])
+        setPokemon([data])
         setCargando(false);
       } catch (error) {
-          console.log(error)
+        setCargando(false);
+        return Swal.fire({
+          title: "Error!",
+          text: "Pokemon no encontrado :(",
+          icon: "error",
+        });    
       }
   }
 
